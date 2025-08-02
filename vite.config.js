@@ -6,10 +6,12 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vite.dev/config/
 export default defineConfig({
+   base: '/dashbord-employee-project/', // ضعي هنا اسم الريبو
   plugins: [
     vue(),
     vueDevTools(),
     tailwindcss(),
+    
   ],
   resolve: {
     alias: {

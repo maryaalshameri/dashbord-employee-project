@@ -1,5 +1,5 @@
 <template>
-  <section class="p-6 space-y-6  mt-10" dir="rtl">
+  <section class="p-6 space-y-6  mt-10 mr-10" dir="rtl">
     <div class="title">
       <h2 class="txthead">ملخص الرواتب</h2>
       
