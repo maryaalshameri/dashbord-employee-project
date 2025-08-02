@@ -5,6 +5,7 @@
   >
     <div class="p-4 text-xl font-bold border-b border-border flex justify-center lg:justify-end">
       <img src="../assets/image/2.png" class="w-10 h-10 lg:w-auto lg:h-auto"/>
+
     </div>
     <nav class="flex-1 p-2 lg:p-4 space-y-2">
       <router-link

@@ -1,5 +1,5 @@
 <template>
-  <section class="p-6 space-y-6  mt-10">
+  <section class="p-6 space-y-6  mt-10 mr-10">
     <h2 class="text-2xl font-bold text-text">سلة المهملات</h2>
 
     <div v-if="trashList.length === 0" class="text-center text-text">لا يوجد موظفين في سلة المهملات</div>

@@ -38,9 +38,10 @@
               </a>
             </li>
             <li>
-              <a href="#" class="block px-4 py-2 hover:text-btn">
-                <i class="fas fa-sign-out-alt mr-2  text-accent"></i> تسجيل الخروج
-              </a>
+            <button @click="logout" class="text-red-600 block px-4 py-2 hover:text-btn hover:underline">
+            <i class="fas fa-sign-out-alt mr-2  text-accent"></i>تسجيل الخروج</button>
+
+
             </li>
           </ul>
         </div>
@@ -51,6 +52,8 @@
 
 <script setup>
 import { ref, onMounted } from 'vue';
+import { useRouter } from 'vue-router'
+const router = useRouter()
 
 const isDark = ref(false);
 const dropdownOpen = ref(false);
@@ -77,6 +80,10 @@ function toggleTheme() {
 function toggleDropdown() {
   dropdownOpen.value = !dropdownOpen.value;
 }
+function logout() {
+  localStorage.removeItem('isLoggedIn')
+  router.push('/Login')
+}
 
 </script>
 
@@ -95,15 +102,5 @@ function toggleDropdown() {
 .animate-fade-in {
   animation: fade-in 0.4s ease-in-out;
 }
-  input::placeholder,
-textarea::placeholder,
-select::placeholder {
-  text-align: right;
-  direction: rtl;
-}
 
-input, textarea, select {
-  direction: rtl;
-  text-align: right;
-}
 </style>
