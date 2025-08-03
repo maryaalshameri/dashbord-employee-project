@@ -28,7 +28,7 @@
 }
 
 .btnAdd{
- @apply bg-btn hover:bg-btnhover text-white px-4 py-2 rounded-lg
+ @apply bg-btn hover:bg-btnhover text-white px-4 py-2 rounded
 }
 .btndalete{
   @apply bg-red-500 text-white px-3 py-1 rounded

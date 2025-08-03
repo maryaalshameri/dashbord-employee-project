@@ -98,9 +98,9 @@ const ratingStars = computed(() => {
         <i class="fas fa-clock w-5 text-btn"></i>
         <span class="px-2 py-1 rounded-full text-white text-sm"
               :class="{
-                'bg-red-600': employee.leaveBalance <= 10,
-                'bg-yellow-500': employee.leaveBalance > 10 && employee.leaveBalance <= 20,
-                'bg-green-600': employee.leaveBalance > 20 && employee.leaveBalance <= 30
+                'bg-red-200': employee.leaveBalance <= 10,
+                'bg-yellow-200': employee.leaveBalance > 10 && employee.leaveBalance <= 20,
+                'bg-green-200': employee.leaveBalance > 20 && employee.leaveBalance <= 30
               }"
             ><span class="font-semibold">رصيد الاجازات:</span>    {{ employee.leaveBalance }}</span>
       </div>
@@ -130,7 +130,7 @@ const ratingStars = computed(() => {
                       }">
                   {{ leave.status }}
                 </span>
-                <span class="text-sm font-medium bg-blue-100 text-blue-800 px-2 py-1 rounded">
+                <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded-full font-medium">
                   {{ calculateDaysDifference(leave.Startdate, leave.Endtdate) }} أيام
                 </span>
               </div>

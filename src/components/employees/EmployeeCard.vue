@@ -24,11 +24,11 @@
           <div>
             <strong>رصيد الإجازات:</strong> 
             <span
-              class="px-2 py-1 rounded-full text-white text-sm"
+              class="px-2 py-1 rounded-full text-white text-sm m-2"
               :class="{
-                'bg-red-600': employee.leaveBalance <= 10,
-                'bg-yellow-500': employee.leaveBalance > 10 && employee.leaveBalance <= 20,
-                'bg-green-600': employee.leaveBalance > 20 && employee.leaveBalance <= 30
+                'bg-red-400': employee.leaveBalance <= 10,
+                'bg-yellow-400': employee.leaveBalance > 10 && employee.leaveBalance <= 20,
+                'bg-green-400': employee.leaveBalance > 20 && employee.leaveBalance <= 30
               }"
             >
               {{ employee.leaveBalance }}

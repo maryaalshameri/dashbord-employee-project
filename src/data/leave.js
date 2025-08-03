@@ -16,7 +16,7 @@ if (!localStorage.getItem(STORAGE_KEY)) {
       employeeName: "علي يوسف",
       Startdate: "2025-08-05",
       Endtdate: "2025-09-01",
-      status: "مقبولة",
+      status: "قيد المراجعة",
       reason: 'إجازة مرضية',
     },
     {

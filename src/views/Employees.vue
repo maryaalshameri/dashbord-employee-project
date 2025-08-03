@@ -35,9 +35,9 @@
 
       <button
         @click="resetFilters"
-        class="btnAdd transition"
+        class="btnAdd"
       >
-        مسح الفلاتر
+       <i class="fas fa-trash"></i> مسح الفلاتر
       </button>
       <router-link to="/AddEmployee" class="btnAdd">
         <i class="fas fa-plus mr-2"></i> إضافة موظف
