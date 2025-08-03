@@ -200,10 +200,14 @@ saveEdit() {
   if (!this.selectedLeave.Endtdate) {
     this.errors.Endtdate = "تاريخ نهاية الإجازة مطلوب";
   }
-
+  if (this.selectedLeave.Startdate && this.selectedLeave.Endtdate && new Date(this.selectedLeave.Endtdate) < new Date(this.selectedLeave.Startdate)) {
+    this.errors.Endtdate = 'تاريخ نهاية الإجازة يجب أن يكون بعد البداية';
+  
+  }
   if (!this.selectedLeave.status) {
     this.errors.status = "الحالة مطلوبة";
   }
+
 
   if (Object.keys(this.errors).length > 0) return;
 
